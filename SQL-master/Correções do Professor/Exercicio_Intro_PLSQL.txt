@@ -1,0 +1,9 @@
+
+Desenvolver um bloco anônimo em PL/SQL, que receba 2 valores e exiba a soma, multiplicação e divisão destes números.
+
+
+Desenvolver um bloco anônimo em PL/SQL, que receba um nome completo em uma variável e exiba somente o primeiro nome.
+
+
+Desenvolver um bloco anônimo em PL/SQL, que receba uma data no formato DD/MM/YYYY e exiba somente o mês por extenso.
+

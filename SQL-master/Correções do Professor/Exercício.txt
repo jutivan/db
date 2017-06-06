@@ -1,0 +1,30 @@
+Exercício individual, para entrega via portal no dia 09/05/2017, valendo NAC.
+Caso tenha alguma dúvida ou observação, pontuar no mesmo arquivo da resposta do exercício, ou encaminhar a dúvida para leonardo@fiap.com.br.
+
+
+Entregar 1 único txt contendo somente o bloco PL/SQL de resposta.
+
+Nome do Arquivo: 2TDS[R ou S]-RM[12345]-NomeCompleto.txt
+Exemplo: 2TDSR-RM71000-LeonardoUchida.txt
+
+
+=======================================
+
+Você foi contratado para desenvolver programa de transferência de dados da tabela pf0064.LOC_ITEM_LOCACAO para a estrutura abaixo:
+
+CREATE TABLE LOC_ITEM_LOCACAO_STG (
+       DT_RETIRADA          DATE 			NULL,
+       NR_ITEM              NUMBER(5) 		NOT NULL,
+       DT_ENTREGA           DATE 			NULL,
+       QT_DIAS              NUMBER(3) 		NULL,
+       VL_LOCACAO           NUMBER(11,2) 	NULL,
+       NR_PLACA             VARCHAR2(7) 	NOT NULL,
+       VL_TOTAL             NUMBER(11,2) 	NULL,
+       NR_PEDIDO            NUMBER(8) 		NOT NULL,
+       DT_CARGA		    DATE		NOT NULL
+);
+
+ALTER TABLE LOC_ITEM_LOCACAO_STG
+       ADD CONSTRAINT PK_LOC_ITEM_LOCACAO2 PRIMARY KEY (NR_PEDIDO, NR_ITEM);
+
+Utilizando o recurso de cursores explícitos, escreva um bloco em PL/SQL que realize a transferência de todos os dados e popule a coluna DT_CARGA com a data da execução  do programa.
