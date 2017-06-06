@@ -1,0 +1,8 @@
+Desenvolver um bloco PL/SQL que faça a transferência dos registros da tabela PF0064.LOC_GRUPO para a estrutura abaixo:
+
+create table loc_grupo_exception(
+CD_GRUPO                                  NUMBER(3) PRIMARY KEY,
+DS_GRUPO                                  VARCHAR2(100),
+VL_LOCACAO_DIARIA                         NUMBER(8,2));
+
+Utilizando o recurso de CURSORES EXPLÍCITOS e EXCEPTIONS, transfira os novos registros e atualize os existentes. Este programa NUNCA deve suspender sua execução por erros.
